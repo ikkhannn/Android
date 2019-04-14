@@ -21,10 +21,10 @@ public class FullScreenActivity extends AppCompatActivity {
         sendBroadcast(intent);
 
     }
-
-    public void CloseFullScreen(View v){
-        finish();
-    }
+    // removed buttons because sir didn't include it in the sample apk app
+//    public void CloseFullScreen(View v){
+//        finish();
+//    }
 
 
 

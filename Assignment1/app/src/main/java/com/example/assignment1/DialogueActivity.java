@@ -19,10 +19,11 @@ public class DialogueActivity extends AppCompatActivity{
         sendBroadcast(intent);
 
     }
+// removed buttons because sir didn't include it in the sample apk app
 
-    public void CloseDialogue(View v){
-        finish();
-    }
+//    public void CloseDialogue(View v){
+//        finish();
+//    }
 
     protected void onResume(){
         super.onResume();
