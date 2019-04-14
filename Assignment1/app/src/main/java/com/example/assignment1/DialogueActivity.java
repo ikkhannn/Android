@@ -25,6 +25,19 @@ public class DialogueActivity extends AppCompatActivity{
 //        finish();
 //    }
 
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+
+
+        Intent intent = new Intent();
+        intent.setAction("Message");
+        intent.putExtra("state","OnRestart - DialogueActivity");
+        sendBroadcast(intent);
+
+
+    }
+
     protected void onResume(){
         super.onResume();
 

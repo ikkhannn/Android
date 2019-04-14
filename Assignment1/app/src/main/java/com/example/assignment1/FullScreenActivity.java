@@ -41,6 +41,19 @@ public class FullScreenActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onRestart(){
+        super.onRestart();
+
+
+        Intent intent = new Intent();
+        intent.setAction("Message");
+        intent.putExtra("state","OnRestart - FullScreenActivity");
+        sendBroadcast(intent);
+
+
+    }
+
+    @Override
     protected void onStop(){
         super.onStop();
 

@@ -65,6 +65,19 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+
+
+        Intent intent = new Intent();
+        intent.setAction("Message");
+        intent.putExtra("state","OnRestart - MainActivity");
+        sendBroadcast(intent);
+
+
+    }
+
 
     @Override
     protected void onStop(){
