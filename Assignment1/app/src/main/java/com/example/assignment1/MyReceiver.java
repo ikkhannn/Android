@@ -9,10 +9,15 @@ public class MyReceiver extends BroadcastReceiver {
 
     public MainActivity MainActivityObject;
 
+
+    MyReceiver(MainActivity ma){
+    MainActivityObject=ma;
+    }
+
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        MainActivityObject.tv.setText("");
+        MainActivityObject.tv.append("\n"+intent.getStringExtra("state"));
 
     }
 }

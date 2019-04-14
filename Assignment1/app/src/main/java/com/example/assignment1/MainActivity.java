@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
    public TextView tv;
     Intent IntentDialogueActivity;
+    BroadcastReceiver BroadcastReceiverObject;
     Intent IntentFullScreenActivity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +26,19 @@ public class MainActivity extends AppCompatActivity {
         IntentFullScreenActivity=new Intent(this,FullScreenActivity.class);
         tv=(TextView)findViewById(R.id.textbox);
         IntentFilter filter=new IntentFilter("Message");
-        registerReceiver(r,filter);
+
+        BroadcastReceiverObject=new MyReceiver(this);
+        registerReceiver(this.BroadcastReceiverObject,filter);
+
+
+
 
         tv.setMovementMethod(new ScrollingMovementMethod());
+        Intent intent = new Intent();
+        intent.setAction("Message");
+        intent.putExtra("state","OnCreate - MainActivity");
+        sendBroadcast(intent);
+
     }
 
 
@@ -43,44 +54,60 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    public void onResume(){
+    protected void onResume(){
         super.onResume();
 
 
             Intent intent = new Intent();
             intent.setAction("Message");
-            intent.putExtra("OnResume","OnResume - MainActivity");
+            intent.putExtra("state","OnResume - MainActivity");
             sendBroadcast(intent);
 
 
     }
 
     @Override
-    public void onStop(){
+    protected void onStop(){
         super.onStop();
 
+        Intent intent = new Intent();
+        intent.setAction("Message");
+        intent.putExtra("state","OnStop - MainActivity");
+        sendBroadcast(intent);
 
 
     }
     @Override
-    public void onPause(){
+    protected void onPause(){
         super.onPause();
 
-
-
-
-
-
-
+        Intent intent = new Intent();
+        intent.setAction("Message");
+        intent.putExtra("state","OnPause - MainActivity");
+        sendBroadcast(intent);
 
     }
-    BroadcastReceiver r=new BroadcastReceiver(){
-        public void onReceive(Context context, Intent intent) {
-           tv.append("On resume");
-        }
-    };
 
 
+    @Override
+    protected void onStart() {
+        super.onStart();
 
+        Intent intent = new Intent();
+        intent.setAction("Message");
+        intent.putExtra("state","OnStart - MainActivity");
+        sendBroadcast(intent);
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        Intent intent = new Intent();
+        intent.setAction("Message");
+        intent.putExtra("state","OnDestroy - MainActivity");
+        sendBroadcast(intent);
+
+    }
 }

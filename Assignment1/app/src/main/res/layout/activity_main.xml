@@ -23,7 +23,7 @@
         android:id="@+id/ClickButtonFullScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="FulScreen Activity"
+        android:text="FullScreen Activity"
         android:onClick="onClickFullScreen"
         />
     <TextView
