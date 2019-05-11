@@ -25,7 +25,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="62dp"
-        android:text="Start" />
+        android:text="Start Progress Bar" />
 
     <TextView
         android:id="@+id/textView"
