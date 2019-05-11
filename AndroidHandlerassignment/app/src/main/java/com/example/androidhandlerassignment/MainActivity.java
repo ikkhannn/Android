@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("I",":"+i);
                     progressBar.setProgress(i);
                     try{
-                        Thread.sleep(1000);
+                        Thread.sleep(500);
                     }
                     catch (InterruptedException ex){
                         ex.printStackTrace();
