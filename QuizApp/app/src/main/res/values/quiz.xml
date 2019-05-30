@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="question1">What is html?</string>
+    <string name="question2">Where is the text of the title tag displayed?</string>
+    <string name="question3">hat are the different levels of headings in HTML?</string>
+    <string name="question4">What happens if you forget a slash at the end of a header tag?</string>
+    <string name="question5">which of the following tag is used to mark a begining of paragraph ?</string>
+    <string name="question6">From which tag descriptive list starts ?</string>
+    <string name="question7">orrect HTML tag for the largest heading is</string>
+    <string name="question8">The attribute of form tag</string>
+    <string name="question9">Markup tags tell the web browser</string>
+    <string name="question10">www is based on which model?</string>
+
+    //Quiz Options//
+
+    //Quiz question1//
+    <string name="option1A">Hyper Type Makeup Longing</string>
+    <string name="option1B">Hyper Text Markup Language</string>
+    <string name="option1C">Hyper Type Marking Logo</string>
+    <string name="option1D">None of these</string>
+
+    //Quiz question2//
+    <string name="option2A">In the title bar</string>
+    <string name="option2B">In the body of the page</string>
+    <string name="option2C">In the status bar</string>
+    <string name="option2D">None of these</string>
+
+    //Quiz question3//
+    <string name="option3A">2-5</string>
+    <string name="option3B">50</string>
+    <string name="option3C">None of these</string>
+    <string name="option3D">1-6</string>
+
+    //Quiz question4//
+    <string name="option4A">Everything following will be a heading format</string>
+    <string name="option4B">A Netscape error</string>
+    <string name="option4C">Nothing</string>
+    <string name="option4D">None of these</string>
+
+    //Quiz question5//
+    <string name="option5A">td</string>
+    <string name="option5B">br</string>
+    <string name="option5C">tr</string>
+    <string name="option5D">p</string>
+
+    //Quiz question6//
+    <string name="option6A">dl</string>
+    <string name="option6B">ll</string>
+    <string name="option6C">dd</string>
+    <string name="option6D">ds</string>
+
+    //Quiz question7//
+    <string name="option7A">head</string>
+    <string name="option7B">h1</string>
+    <string name="option7C">h6</string>
+    <string name="option7D">heading</string>
+
+    //Quiz question8//
+    <string name="option8A">Both method and action</string>
+    <string name="option8B">Method</string>
+    <string name="option8C">action</string>
+    <string name="option8D">None of these</string>
+
+    //Quiz question9//
+    <string name="option9A">How to display the page</string>
+    <string name="option9B">How to organise the page</string>
+    <string name="option9C">How to display message box on page</string>
+    <string name="option9D">None of these</string>
+
+    //Quiz question10//
+    <string name="option10A">3-tier</string>
+    <string name="option10B">Local-server</string>
+    <string name="option10C">Client-server</string>
+    <string name="option10D">None of these</string>
+
+    //Remarks//
+    <string name="goodRemark">\"Welldone.\"</string>
+</resources>
